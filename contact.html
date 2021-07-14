@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Form</title>
+    <style>
+        form{
+            font-size: 30px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight:700;
+            width: 100%;
+            background-color: rgb(243, 157, 157);
+        }
+        input[type=text,email,pwd], select, textarea{
+            width: 30%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+            }
+    </style>
+</head>
+<body>
+    <form>
+    <h1 style="margin-left: 40%;">CONTACT US</h1>
+    <label style="padding: 12px 12px 12px 0;
+    display: inline-block;width: 25%;
+  margin-top: 6px;" for="fn">First Name</label>
+    <input style="font-size: 1em;" type="text" name="fn" id="fn" placeholder="Your name" required><br>
+    <label style="padding: 12px 12px 12px 0;
+    display: inline-block;width: 25%;
+  margin-top: 6px;" for="ln">Last Name</label>
+    <input style="font-size: 1em;" type="text" name="ln" id="ln" placeholder="Your lastname" required><br>
+    <label style="padding: 12px 12px 12px 0;
+    display: inline-block;width: 25%;
+  margin-top: 6px;" for="email">E-Mail ID</label>
+    <input style="font-size: 1em;" type="email" name="email" id="email" placeholder="Your E-mail" required><br>
+    <label style="padding: 12px 12px 12px 0;
+    display: inline-block;width: 25%;
+  margin-top: 6px;" for="pwd">Password</label>
+    <input style="font-size: 1em;" type="password" name="pwd" id="pwd" placeholder="Your password" required><br>
+    <label style="padding: 12px 12px 12px 0;
+    display: inline-block;width: 25%;
+  margin-top: 6px;" for="city">City</label>
+    <select style="font-size: 1em;" id="city" name="city">
+        <option value="Chennai">Chennai</option>
+        <option value="Coimbatore">Coimbatore</option>
+        <option value="Madurai">Madurai</option>
+        <option value="Trichy">Trichy</option>
+      </select><br>
+    <label style="padding: 12px 12px 12px 0;
+    display: inline-block;width: 25%;
+  margin-top: 6px;" for="state">State</label>
+    <select style="font-size: 1em;" id="state" name="state">
+        <option value="tamilnadu">Tamilnadu</option>
+        <option value="kerala">Kerala</option>
+        <option value="Andhrapradesh">Andhrapradesh</option>
+        <option value="karnataka">Karnataka</option>
+      </select><br>
+    <label style="padding: 12px 12px 12px 0;
+    display: inline-block;width: 25%;
+  margin-top: 6px;" for="country">Country</label>
+    <select style="font-size: 1em;" id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+      </select><br>
+    <label style="padding: 12px 12px 12px 0;
+    display: inline-block;width: 25%;
+  margin-top: 6px;" for="zip">Zip</label>
+    <input style="font-size: 1em;" type="text" name="zip" id="zip" required><br>
+    <label style="padding: 12px 12px 12px 0;
+    display: inline-block;width: 25%;
+  margin-top: 6px;" for="subject">Subject</label>
+    <textarea id="subject" name="subject" style="padding: 12px 12px 12px 0;height: 200px;width: 375px;">
+    </textarea><br><br>
+    <input style="  background-color: #0022b9;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  " type="submit" value="Submit">
+</form>
+</body>
+</html>
